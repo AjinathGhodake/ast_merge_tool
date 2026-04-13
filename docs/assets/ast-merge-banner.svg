@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 180">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1117;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#161b22;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00d9ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7c3aed;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="180" rx="12" fill="url(#bg)" />
+  <rect x="0" y="168" width="600" height="3" fill="url(#accent)" />
+
+  <!-- Tree icon -->
+  <g transform="translate(60, 50)">
+    <!-- Root node -->
+    <circle cx="40" cy="10" r="8" fill="#00d9ff" opacity="0.9"/>
+    <!-- Left branch -->
+    <line x1="34" y1="16" x2="15" y2="45" stroke="#00d9ff" stroke-width="2" opacity="0.6"/>
+    <circle cx="15" cy="50" r="6" fill="#7c3aed" opacity="0.8"/>
+    <!-- Right branch -->
+    <line x1="46" y1="16" x2="65" y2="45" stroke="#00d9ff" stroke-width="2" opacity="0.6"/>
+    <circle cx="65" cy="50" r="6" fill="#7c3aed" opacity="0.8"/>
+    <!-- Left-left leaf -->
+    <line x1="11" y1="55" x2="0" y2="72" stroke="#7c3aed" stroke-width="1.5" opacity="0.4"/>
+    <circle cx="0" cy="76" r="4" fill="#00d9ff" opacity="0.5"/>
+    <!-- Left-right leaf -->
+    <line x1="19" y1="55" x2="30" y2="72" stroke="#7c3aed" stroke-width="1.5" opacity="0.4"/>
+    <circle cx="30" cy="76" r="4" fill="#00d9ff" opacity="0.5"/>
+    <!-- Right-left leaf -->
+    <line x1="61" y1="55" x2="50" y2="72" stroke="#7c3aed" stroke-width="1.5" opacity="0.4"/>
+    <circle cx="50" cy="76" r="4" fill="#00d9ff" opacity="0.5"/>
+    <!-- Right-right leaf -->
+    <line x1="69" y1="55" x2="80" y2="72" stroke="#7c3aed" stroke-width="1.5" opacity="0.4"/>
+    <circle cx="80" cy="76" r="4" fill="#00d9ff" opacity="0.5"/>
+  </g>
+
+  <!-- Merge arrows -->
+  <g transform="translate(165, 72)">
+    <path d="M 0 15 L 20 0 L 20 10 L 45 10 L 45 20 L 20 20 L 20 30 Z" fill="url(#accent)" opacity="0.7"/>
+  </g>
+
+  <!-- Text -->
+  <text x="230" y="82" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="42" font-weight="700" fill="#e6edf3" letter-spacing="-1">
+    AST Merge
+  </text>
+  <text x="230" y="115" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="16" fill="#8b949e" letter-spacing="0.5">
+    Semantic Code Merging with LLM Intelligence
+  </text>
+
+  <!-- Language badges -->
+  <g transform="translate(230, 130)">
+    <rect x="0" y="0" width="60" height="22" rx="11" fill="#3572A5" opacity="0.3"/>
+    <text x="30" y="15" font-family="system-ui, sans-serif" font-size="11" fill="#3572A5" text-anchor="middle">Python</text>
+    <rect x="70" y="0" width="80" height="22" rx="11" fill="#f1e05a" opacity="0.2"/>
+    <text x="110" y="15" font-family="system-ui, sans-serif" font-size="11" fill="#f1e05a" text-anchor="middle">JavaScript</text>
+    <rect x="160" y="0" width="80" height="22" rx="11" fill="#3178c6" opacity="0.2"/>
+    <text x="200" y="15" font-family="system-ui, sans-serif" font-size="11" fill="#3178c6" text-anchor="middle">TypeScript</text>
+  </g>
+</svg>
